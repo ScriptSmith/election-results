@@ -17,7 +17,7 @@ x.onreadystatechange = function () {
         // Create grid row
         var row = document.createElement("div")
         row.id = contestName;
-        row.className = "row contest";       
+        row.className = "row contest";
 
         // Create grid heading
         var heading = document.createElement("h1")
@@ -83,8 +83,8 @@ x.onreadystatechange = function () {
                 prefix = "Coalition";
                 type = "Coalition"
             }
-            
-            
+
+
             // Find candidates based on contest result type
             var candidates = results.getElementsByTagName(prefix);
 
@@ -111,7 +111,7 @@ x.onreadystatechange = function () {
                 if(["LNP","LP","NP","LNC"].indexOf(candidateParty) != -1){
                     candidateColor = "blue";
                 }
-                else if(candidateParty == "ALP"){
+                else if(["ALP","CLP"].indexOf(candidateParty) != -1){
                     candidateColor = "red";
                 }
                 else if( candidateParty == "GRN"){
@@ -132,7 +132,7 @@ x.onreadystatechange = function () {
 
         // Add row to document
         document.body.appendChild(row)
-         
+
     }
     // Remove loading notice
     $("#loading").hide();
@@ -151,6 +151,6 @@ $(document).ready(function() {
             } else {
                 $(this).show();
             }
-        });    
+        });
     });
 });
