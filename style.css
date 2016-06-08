@@ -10,3 +10,7 @@ input[type="text"]{
   font-size: 5em;
   transform: translate(-50%, -50%);
 }
+
+h1 {
+    margin-left: 30px;
+}
