@@ -111,7 +111,7 @@ x.onreadystatechange = function () {
                 if(["LNP","LP","NP","LNC"].indexOf(candidateParty) != -1){
                     candidateColor = "blue";
                 }
-                else if(["ALP","CLP"].indexOf(candidateParty) != -1){
+                else if(["ALP","CLR"].indexOf(candidateParty) != -1){
                     candidateColor = "red";
                 }
                 else if( candidateParty == "GRN"){
